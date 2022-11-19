@@ -3,11 +3,44 @@
 <head>
   <meta charset="UTF-8">
   <title>Page Title</title>
-  <script src="javascript.js"></script>
+  <script src="javascript.js" defer></script>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <button id="rockBtn" value="Rock" onclick="game('Rock', getComputerChoice())">Rock</button>
-  <button id="paperBtn" value="Paper" onclick="game('Paper', getComputerChoice())">Paper</button>
-  <button id="scissorsBtn" value="Scissors" onclick="game('Scissors', getComputerChoice())">Scissors</button>
+  <div class="page">
+    <img src="logo.png" class="logo">
+    <div class="gameWindow">
+        <div class="enemyInfo">
+          <img src="enemyhealth.png" id="compHealthImg">
+          <progress id="compHealth" value="100" max="100"></progress>
+          <div class="playerSelection">
+            <button id="fakeBtn">?</button>
+            <button id="fakeBtn">?</button>
+            <button id="fakeBtn">?</button>
+          </div>
+          <!--Insert photo of the black knight in front of '?' buttons--> 
+        </div>
+        <div class="playerInfo">
+          <div class="playerSelection">
+            <button id="rockBtn" value="Rock" onclick="game('Rock', getComputerChoice())">Sword</button>
+            <button id="paperBtn" value="Paper" onclick="game('Paper', getComputerChoice())">Lance</button>
+            <button id="scissorsBtn" value="Scissors" onclick="game('Scissors', getComputerChoice())">Axe</button>
+          </div>
+          <div class="playerHealth">
+            <img src="playerhealth.png" id="playerHealthImg">
+            <progress id="playerHealth" value="100" max="100"></progress>
+          </div>
+        </div>
+    <div class="sorenBot">
+      <img src="txtbox.png" class="txtBox">
+      <div class="portrait">
+        <!--insert evolving soren emotes here-->
+      </div>
+      <div class="txtBox">
+        <!--insert evolving text here-->
+      </div>
+    </div>
+    </div>
+  </div>
 </body>
 </html>
