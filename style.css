@@ -1,0 +1,124 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+
+body, .gameWindow {
+    background-size: cover;  
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+body {
+    background-image: url("background.png");
+}
+
+
+.page {
+    width: 70%;
+    min-width: 800px;
+    max-width: 1000px;
+    height: 100%;
+    margin: auto;
+    background-color: #220b05;
+    box-shadow: 0px 0px 20px 6px #000;
+}
+
+.logo {
+    display: block;
+    margin: auto;
+    width: 700px;
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+
+.gameWindow, .sorenBot {
+    width: 100%;
+    margin: auto;
+}
+
+.gameWindow {
+    background-image: url("innerbg.png");
+    padding-top: 20px;
+}
+
+.enemyInfo, .playerInfo {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin-left: 5%;
+}
+
+.enemyInfo {
+    width: 475px;
+}
+
+#compHealth, #playerHealth {
+    width: 425px;
+}
+
+#compHealth, #playerHealth {
+    position: absolute;
+    padding: 12px;
+    width: 425px;
+}
+
+#compHealth {
+    margin-top: 23px;
+    margin-left: 25px;
+}
+
+#compHealthImg, #playerHealthImg {
+    width: 475px;
+    position: relative;
+}
+
+.playerInfo {
+    width: 475px;
+    padding-left: calc(90% - 475px);
+    padding-top: 30%;
+    padding-bottom: 15px;
+}
+
+.playerSelection {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 12px;
+    padding-bottom: 0;
+}
+
+button {
+    width: 110px;
+    height: 50px;
+}
+
+#rockBtn, #paperBtn, #scissorsBtn {
+    border: 3px solid rgb(187, 159, 90);
+    border-radius: 8px;
+    background-color: rgb(14, 17, 32, 0.8);
+    color: rgb(197, 197, 197);
+}
+
+#fakeBtn {
+    border: 3px solid rgb(14, 14, 14);
+    border-radius: 8px;
+    background-color: rgba(63, 63, 63);
+    color: rgb(153, 153, 153);
+}
+
+#playerHealth {
+    margin-top: 24px;
+    margin-left: -450px;
+}
+
+.sorenBot {
+
+}
+
+.txtBox {
+    width: 100%;
+}
