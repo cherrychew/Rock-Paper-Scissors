@@ -1,7 +1,3 @@
-// i dont like this function. i think if this were C i would make an array of [rock, scissors, paper], 
-// and then i would plug [randNum] into my array to return a string. it feels silly assigning a number to
-// a word like this.
-
 console.log("Please select a play!");
 
 
@@ -14,9 +10,11 @@ function playRound(playerSelection, computerSelection) {
     || playerSelection == 'Rock' && computerSelection == 'Scissors'
     || playerSelection == 'Paper' && computerSelection == 'Rock') {
         playerScore = playerScore + 1
+        compHealth.value -= 20; //new bestieee
         console.log(`You win! ${playerSelection} beats ${computerSelection}`)
     }
     else {
+        playerHealth.value -= 20;
         compScore = compScore + 1
         console.log(`Computer wins! ${computerSelection} beats ${playerSelection}`)
     }
@@ -39,7 +37,7 @@ function game(playerSelection, computerSelection) {
     playRound(playerSelection, getComputerChoice());
     gamesPlayed = gamesPlayed + 1
     console.log(`Player's Score: ${playerScore} | Computer's Score: ${compScore}`);
-    if ((gamesPlayed - tieScore) == 5) {
+    if ((gamesPlayed - tieScore) == 5 || playerScore == 3 || compScore == 3)  {
         if (playerScore > compScore) {
             console.log ("Player is the final winner!")
         } 
@@ -55,3 +53,6 @@ let playerSelection = null;
 let playerScore = 0;
 let compScore = 0;
 let tieScore = 0;
+
+let compHealth = document.getElementById("compHealth")
+let playerHealth = document.getElementById("playerHealth")
