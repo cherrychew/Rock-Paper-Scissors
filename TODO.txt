@@ -1,7 +1,16 @@
 --- # TO-DO
-- Create a text box for the webpage to announce from.
-- Stylize buttons, import logos.
 - Include "Fire Emblem Logo" font & "Fire Emblem 8" font.
-- Include an "HP" bar, with 3000 "health".
 - Include SFX for text & game outcome.
+- Include evolving sprite for sorenBot
+- Write text interaction based on game results.
+- Write JS to make the text "write out" on the screen.
+- Import enemy sprite
+- make a better logo or background. looks god awful. maybe go crazy with it and put a gif of fire.
+- add a footer, probably.
+- add a resources folder. 
+
+--- # Completed
+- Include an "HP" bar.
 - actually have a css file :)
+- Stylize buttons, import logos.
+- Create a text box for the webpage to announce from.
