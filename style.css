@@ -12,14 +12,12 @@ body, .gameWindow {
 }
 
 body {
-    background-image: url("background.png");
+    background-image: url("resources/background.png");
 }
 
 
 .page {
-    width: 70%;
-    min-width: 800px;
-    max-width: 1000px;
+    width: 1000px;
     height: 100%;
     margin: auto;
     background-color: #220b05;
@@ -40,8 +38,10 @@ body {
 }
 
 .gameWindow {
-    background-image: url("innerbg.png");
+    background-image: url("resources/innerbg.png");
     padding-top: 20px;
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 
 .enemyInfo, .playerInfo {
@@ -115,10 +115,41 @@ button {
     margin-left: -450px;
 }
 
-.sorenBot {
-
+.txtBoxBG {
+    width: 100%;
+    position: relative;
 }
 
-.txtBox {
-    width: 100%;
+#soren {
+    position: absolute;
+    margin-top: -355px;
+    margin-left: 100px;
+    height: 300px;
+}
+
+.text {
+    position: absolute;
+    width: 550px;
+    margin-top: -240px;
+    margin-left: 350px;
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 26px;
+    color: rgb(197, 197, 197);
+    cursor: pointer;
+}
+
+.text span.revealed {
+    opacity: 1;
+}
+
+.text span {
+    opacity: 0;
+}
+
+#blackknight {
+    position: absolute;
+    width: 200px;
+    margin-top: 140px;
+    margin-left: 135px;
+    ;
 }
