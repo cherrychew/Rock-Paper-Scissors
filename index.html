@@ -5,20 +5,21 @@
   <title>Page Title</title>
   <script src="javascript.js" defer></script>
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="page">
-    <img src="logo.png" class="logo">
+    <img src="resources/logo.png" class="logo">
     <div class="gameWindow">
         <div class="enemyInfo">
-          <img src="enemyhealth.png" id="compHealthImg">
+          <img src="resources/enemyhealth.png" id="compHealthImg">
           <progress id="compHealth" value="100" max="100"></progress>
           <div class="playerSelection">
             <button id="fakeBtn">?</button>
             <button id="fakeBtn">?</button>
             <button id="fakeBtn">?</button>
           </div>
-          <!--Insert photo of the black knight in front of '?' buttons--> 
+          <img src="resources/dark-knight.png" id="blackknight"> 
         </div>
         <div class="playerInfo">
           <div class="playerSelection">
@@ -27,20 +28,18 @@
             <button id="scissorsBtn" value="Scissors" onclick="game('Scissors', getComputerChoice())">Axe</button>
           </div>
           <div class="playerHealth">
-            <img src="playerhealth.png" id="playerHealthImg">
+            <img src="resources/playerhealth.png" id="playerHealthImg">
             <progress id="playerHealth" value="100" max="100"></progress>
           </div>
         </div>
-    <div class="sorenBot">
-      <img src="txtbox.png" class="txtBox">
-      <div class="portrait">
-        <!--insert evolving soren emotes here-->
-      </div>
-      <div class="txtBox">
-        <!--insert evolving text here-->
-      </div>
+    <img src="resources/txtbox.png" class="txtBoxBG">
+    <div>
+      <img src="resources/mouthclosed.png" id="soren">
     </div>
+    <div>
+      <div class="text" onclick="nextPrompt()"></div>
     </div>
+  </div>
   </div>
 </body>
 </html>
